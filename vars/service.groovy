@@ -23,10 +23,6 @@ def call(body) {
             print("Testing Canary")
         }
 
-        stage("Human Testing") {
-            input(message: 'Manual testing succeeded?', ok: 'Yes')
-        }
-
         stage("Deploy Production") {
             print("Deploying Production")
         }
